@@ -29,3 +29,10 @@ config/secrets.yml
 /vendor/assets/bower_components
 *.bowerrc
 bower.json
+
+# Ignore other unneeded files.
+config/database.yml
+*.swp
+*~
+.DS_Store
+.secret
