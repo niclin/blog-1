@@ -44,3 +44,8 @@ gem "twitter-bootstrap-rails"
 # Use Devise
 gem 'devise'
 
+# Use redcarpet for markdown
+gem 'redcarpet'
+
+# Use pygments
+gem 'pygments.rb'
