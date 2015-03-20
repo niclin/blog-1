@@ -1,0 +1,2 @@
+$ ->
+  $('table').addClass('table')

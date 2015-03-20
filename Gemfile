@@ -49,3 +49,6 @@ gem 'redcarpet'
 
 # Use pygments
 gem 'pygments.rb'
+
+# Use jquery-turbolinks
+gem 'jquery-turbolinks'
