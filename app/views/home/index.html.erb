@@ -1,27 +1,41 @@
-<div class="container">
-  <header class="page-header">
-    <h1>George Web Labs <small></small></h1>
-  </header>
-</div>
+
 <div class="main">
-<% @articles.each do |article| %>
+
   <div class="container">
     <div class="row">
-      <div class="col-md-8 article">
-        <div class="post-title">
-          <h2><%= link_to article.title, article_path(article) %></h2>
+      <div class="col-md-8">
+      <% @articles.each do |article| %>
+        <div class="post">
+          <div class="post-title">
+            <%= link_to article.title, article_path(article) %>
+          </div>
+          <div class="post-info">
+            <p><%= getCustomStrftime(article.created_at) %></p>
+          </div>
+          <div class="post-text">
+            
+          </div>
         </div>
-        <div class="post-time">
-          <p><%= getCustomStrftime(article.created_at) %></p>
-          <p><%= article.user.name %></p>
-        </div>
-        <div class="post-text">
-          <p><%= link_to 'Learn More >>', article_path(article) %></p>
-        </div>
+      <% end %>
       </div>
       <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <h4>About George</h4>
+                <a href="<%= about_path %>"><img class="img-circle" src="https://farm8.staticflickr.com/7676/16930268808_bac6e81dd1.jpg" width="200" height="200" alt="avatar"></a>
+                <p>I am a programmer who dreams and pursues excellence.</p>
+                <ul class="social-network">
+                  <li><a class="github" href="https://github.com/georgeweblabs"><i class="fa fa-github"></i></a></li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-<% end %>
+
 </div>

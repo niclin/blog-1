@@ -4,10 +4,39 @@
 .main {
   padding-top: 50px;
   padding-bottom: 50px;
-  background: #F2F2F2;
-  .article {
-    border: 1px solid #CCCCCC;
+  
+  .post {
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 20px;
     background: white;
     margin-bottom: 50px;
+    .post-title {
+      font-size: 36px;
+      a {
+        color: black;
+        font-weight: bold;
+      }
+      a:hover {
+        color: #c71f16;
+        text-decoration: none;
+      }
+    }
+    .post-info {
+      color: #B3B3B3;
+    }
+  }
+}
+
+ul.social-network {
+  list-style-type: none;
+  font-size: 50px;
+  li {
+    display: inline;
+    a.github {
+      color: black;
+      &:hover {
+        color: #4183c4;
+      }
+    }
   }
 }

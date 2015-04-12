@@ -30,13 +30,49 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 .main {
   padding-top: 50px;
   padding-bottom: 50px;
-  background: #F2F2F2;
 }
 /* line 8, /Users/georgechang/Documents/sites/blog/app/assets/stylesheets/home.css.scss */
-.main .article {
-  border: 1px solid #CCCCCC;
+.main .post {
+  border-bottom: 1px solid #CCCCCC;
+  padding-bottom: 20px;
   background: white;
   margin-bottom: 50px;
+}
+/* line 13, /Users/georgechang/Documents/sites/blog/app/assets/stylesheets/home.css.scss */
+.main .post .post-title {
+  font-size: 36px;
+}
+/* line 15, /Users/georgechang/Documents/sites/blog/app/assets/stylesheets/home.css.scss */
+.main .post .post-title a {
+  color: black;
+  font-weight: bold;
+}
+/* line 19, /Users/georgechang/Documents/sites/blog/app/assets/stylesheets/home.css.scss */
+.main .post .post-title a:hover {
+  color: #c71f16;
+  text-decoration: none;
+}
+/* line 24, /Users/georgechang/Documents/sites/blog/app/assets/stylesheets/home.css.scss */
+.main .post .post-info {
+  color: #B3B3B3;
+}
+
+/* line 30, /Users/georgechang/Documents/sites/blog/app/assets/stylesheets/home.css.scss */
+ul.social-network {
+  list-style-type: none;
+  font-size: 50px;
+}
+/* line 33, /Users/georgechang/Documents/sites/blog/app/assets/stylesheets/home.css.scss */
+ul.social-network li {
+  display: inline;
+}
+/* line 35, /Users/georgechang/Documents/sites/blog/app/assets/stylesheets/home.css.scss */
+ul.social-network li a.github {
+  color: black;
+}
+/* line 37, /Users/georgechang/Documents/sites/blog/app/assets/stylesheets/home.css.scss */
+ul.social-network li a.github:hover {
+  color: #4183c4;
 }
 .hll { background-color: #ffffcc }
 .c { color: #408080; font-style: italic } /* Comment */
@@ -123,61 +159,62 @@ footer {
 }
 
 .navbar-default {
-  background-color: #0096ff;
-  border-color: #3dacff;
+  background-color: #ffffff;
+  border-color: #cccccc;
 }
 .navbar-default .navbar-brand {
-  color: #ffffff;
+  color: #c71f16;
+  font-size: 30px;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #004479;
+  color: #c71f16;
 }
 .navbar-default .navbar-text {
-  color: #ffffff;
+  color: #000000;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #ffffff;
+  color: #000000;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #004479;
+  color: #c71f16;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #004479;
-  background-color: #3dacff;
+  color: #c71f16;
+  background-color: #ffffff;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  color: #004479;
-  background-color: #3dacff;
+  color: #c71f16;
+  background-color: #ffffff;
 }
 .navbar-default .navbar-toggle {
-  border-color: #3dacff;
+  border-color: #ffffff;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #3dacff;
+  background-color: #ffffff;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #ffffff;
+  background-color: #000000;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #ffffff;
+  border-color: #000000;
 }
 .navbar-default .navbar-link {
-  color: #ffffff;
+  color: #000000;
 }
 .navbar-default .navbar-link:hover {
-  color: #004479;
+  color: #c71f16;
 }
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #ffffff;
+    color: #000000;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #004479;
+    color: #c71f16;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #004479;
-    background-color: #3dacff;
+    color: #c71f16;
+    background-color: #ffffff;
   }
 }
