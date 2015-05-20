@@ -13574,4 +13574,8 @@ Copyright (c) 2012-2013 Sasha Koss & Rico Sta. Cruz
 
 
 
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
 ;

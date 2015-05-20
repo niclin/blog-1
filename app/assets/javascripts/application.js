@@ -16,3 +16,7 @@
 //= require_tree .
 //= require twitter/bootstrap
 //= require turbolinks
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})

@@ -80,3 +80,12 @@ footer {
     background-color: #ffffff;
   }
 }
+
+.centered-text {
+  text-align: center;
+}
+.centered-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

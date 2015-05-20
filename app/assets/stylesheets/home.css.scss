@@ -29,12 +29,13 @@
 
 ul.social-network {
   list-style-type: none;
+  padding-left: 0;
   font-size: 50px;
   li {
     display: inline;
-    a.github {
+    a.social-icon {
       color: black;
-      &:hover {
+      &:hover, &:focus, &:active {
         color: #4183c4;
       }
     }
