@@ -9,7 +9,6 @@
 
 /* line 9, /Users/georgechang/Documents/sites/blog/app/assets/stylesheets/article.css.scss */
 .article-text {
-  font-size: 20px;
   margin-bottom: 150px;
 }
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
@@ -59,21 +58,44 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 
 /* line 30, /Users/georgechang/Documents/sites/blog/app/assets/stylesheets/home.css.scss */
 ul.social-network {
+  width: 5em;
+  margin-left: auto;
+  margin-right: auto;
   list-style-type: none;
   padding-left: 0;
   font-size: 50px;
 }
-/* line 34, /Users/georgechang/Documents/sites/blog/app/assets/stylesheets/home.css.scss */
+/* line 37, /Users/georgechang/Documents/sites/blog/app/assets/stylesheets/home.css.scss */
 ul.social-network li {
   display: inline;
 }
-/* line 36, /Users/georgechang/Documents/sites/blog/app/assets/stylesheets/home.css.scss */
+/* line 39, /Users/georgechang/Documents/sites/blog/app/assets/stylesheets/home.css.scss */
 ul.social-network li a.social-icon {
   color: black;
 }
-/* line 38, /Users/georgechang/Documents/sites/blog/app/assets/stylesheets/home.css.scss */
+/* line 41, /Users/georgechang/Documents/sites/blog/app/assets/stylesheets/home.css.scss */
 ul.social-network li a.social-icon:hover, ul.social-network li a.social-icon:focus, ul.social-network li a.social-icon:active {
   color: #4183c4;
+}
+
+/* line 48, /Users/georgechang/Documents/sites/blog/app/assets/stylesheets/home.css.scss */
+.img-centerable {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 54, /Users/georgechang/Documents/sites/blog/app/assets/stylesheets/home.css.scss */
+p.blocktext {
+  margin-left: auto;
+  margin-right: auto;
+  width: 10em;
+}
+
+/* line 60, /Users/georgechang/Documents/sites/blog/app/assets/stylesheets/home.css.scss */
+.avatar-img {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -92,6 +114,14 @@ ul.social-network li a.social-icon:hover, ul.social-network li a.social-icon:foc
 
  */
 
+
+h1 {
+  font-size: 300%;
+}
+
+p {
+  font-size: 150%;
+}
 
 footer {
   height: 100px;
@@ -164,6 +194,18 @@ footer {
 }
 .centered-block {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+}
+
+.anchor {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.anchor:hover, .anchor:focus {
+  color: #333333;
+}
+
+figure {
+  margin-bottom: 20px;
 }
