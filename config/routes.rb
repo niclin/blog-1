@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   #end
   root 'home#index'
   get 'about' => 'home#about'
+  get 'portfolio' => 'home#portfolio'
   resources :articles
 
   get 'login' => 'home#login'
