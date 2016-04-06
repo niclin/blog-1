@@ -17,6 +17,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to 'BLOG', root_path %></li>
         <li><%= link_to 'ABOUT', about_path %></li>
+        <li><%= link_to 'PORTFOLIO', portfolio_path %></li>
         <% if user_signed_in? %>
           <p class="navbar-text">Signed in as <%= current_user.name %></p>
           <li><%= link_to 'Articles', articles_path if current_user.role == Role.find_by_name("admin") %></li>
