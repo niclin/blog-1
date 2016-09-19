@@ -19,7 +19,7 @@ xml.rss :version => "2.0" do
         xml.pubDate article.created_at.to_s(:rfc822)
         xml.link article_url(article)
         xml.guid "http://georgeweblabs.com/articles/" + article.id.to_s
-        xml.description article.text
+        xml.description markdown article.text
       end
     end
   end
